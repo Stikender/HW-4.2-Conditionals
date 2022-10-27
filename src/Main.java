@@ -43,6 +43,59 @@ public class Main {
         }
 
         System.out.println("Exercise 4");
+
+        int deliveryDistance = 20;
+        int deliveriPeriod = 1;
+
+        if (deliveryDistance % 20 ==0 && deliveriPeriod +1 ==0)  {
+            System.out.println("Для доставки карты потребуется " + deliveriPeriod + " дней.");
+            }
+
+
+        System.out.println("Exercise 5");
+        int monthNamber =12;
+
+        switch (monthNamber) {
+            case 1:
+                System.out.println("Зима");
+                break;
+            case 2:
+                System.out.println("Зима");
+                break;
+            case 3:
+                System.out.println("Весна");
+                break;
+            case 4:
+                System.out.println("Весна");
+                break;
+            case 5:
+                System.out.println("Весна");
+                break;
+            case 6:
+                System.out.println("Лето");
+                break;
+            case 7:
+                System.out.println("Лето");
+                break;
+            case 8:
+                System.out.println("Лето");
+                break;
+            case 9:
+                System.out.println("Осень");
+                break;
+            case 10:
+                System.out.println("Осень");
+                break;
+            case 11:
+                System.out.println("Осень");
+                break;
+            case 12:
+                System.out.println("Зима");
+                break;
+            default:
+                System.out.println("Такого времени года не существует.");
+                }
+
     }
 
 }

@@ -41,6 +41,8 @@ public class Main {
                 System.out.println(year + " год не является високосным");
             }
         }
+
+        System.out.println("Exercise 4");
     }
 
 }

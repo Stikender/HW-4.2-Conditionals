@@ -45,60 +45,42 @@ public class Main {
         System.out.println("Exercise 4");
 
         int deliveryDistance = 95;
-        int deliveriPeriod = 0;
+        int deliveriPeriod = 1;
 
-        if (deliveryDistance < 20)  {
-            System.out.println("Для доставки карты потребуется " + (deliveriPeriod += 1) + " дней.");
-            }
-        else if (deliveryDistance >= 20 && deliveryDistance < 60)  {
-            System.out.println("Для доставки карты потребуется " + (deliveriPeriod += 2) + " дней.");
+        if (deliveryDistance > 20)  {
+            deliveriPeriod++;
         }
-        else if (deliveryDistance >= 60 && deliveryDistance < 100)  {
-            System.out.println("Для доставки карты потребуется " + (deliveriPeriod += 3) + " дней.");
+        if (deliveryDistance > 60)  {
+            deliveriPeriod++;
         }
+        System.out.println("Для доставки банковской карты потребуется дней " + deliveriPeriod);
 
         System.out.println("Exercise 5");
         int monthNamber =12;
 
         switch (monthNamber) {
+            case 12:
             case 1:
-                System.out.println("Зима");
-                break;
             case 2:
                 System.out.println("Зима");
                 break;
             case 3:
-                System.out.println("Весна");
-                break;
             case 4:
-                System.out.println("Весна");
-                break;
             case 5:
                 System.out.println("Весна");
                 break;
             case 6:
-                System.out.println("Лето");
-                break;
             case 7:
-                System.out.println("Лето");
-                break;
             case 8:
                 System.out.println("Лето");
                 break;
             case 9:
-                System.out.println("Осень");
-                break;
             case 10:
-                System.out.println("Осень");
-                break;
             case 11:
                 System.out.println("Осень");
                 break;
-            case 12:
-                System.out.println("Зима");
-                break;
-            default:
-                System.out.println("Такого времени года не существует.");
+                        default:
+                System.out.println("Такого месяца не существует" + monthNamber);
                 }
 
     }

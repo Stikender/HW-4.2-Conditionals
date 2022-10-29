@@ -44,13 +44,18 @@ public class Main {
 
         System.out.println("Exercise 4");
 
-        int deliveryDistance = 20;
-        int deliveriPeriod = 1;
+        int deliveryDistance = 95;
+        int deliveriPeriod = 0;
 
-        if (deliveryDistance % 20 ==0 && deliveriPeriod +1 ==0)  {
-            System.out.println("Для доставки карты потребуется " + deliveriPeriod + " дней.");
+        if (deliveryDistance < 20)  {
+            System.out.println("Для доставки карты потребуется " + (deliveriPeriod += 1) + " дней.");
             }
-
+        else if (deliveryDistance >= 20 && deliveryDistance < 60)  {
+            System.out.println("Для доставки карты потребуется " + (deliveriPeriod += 2) + " дней.");
+        }
+        else if (deliveryDistance >= 60 && deliveryDistance < 100)  {
+            System.out.println("Для доставки карты потребуется " + (deliveriPeriod += 3) + " дней.");
+        }
 
         System.out.println("Exercise 5");
         int monthNamber =12;
